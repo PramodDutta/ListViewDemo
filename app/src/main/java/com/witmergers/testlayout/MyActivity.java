@@ -31,7 +31,7 @@ public class MyActivity extends ActionBarActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Toast.makeText(MyActivity.this,"Selected"+adapterView.getItemIdAtPosition(i),Toast.LENGTH_LONG).show();
+                Toast.makeText(MyActivity.this,String.valueOf("Selected"+adapterView.getItemIdAtPosition(i)),Toast.LENGTH_LONG).show();
                 Toast.makeText(MyActivity.this,"Selected next will be"+adapterView.getItemIdAtPosition(i),Toast.LENGTH_LONG).show();
 
             }
