@@ -6,7 +6,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -21,7 +20,7 @@ public class MyActivity extends ActionBarActivity {
 
         String [] myValues = {"This is 1","This is 2","This is 3","This is 4","This is 4","This is 5"};
 
-        ListAdapter listAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1, myValues);
+        ListAdapter listAdapter = new MyAdapter(this,myValues);
 
         ListView theListView = (ListView)findViewById(R.id.listView);
 
