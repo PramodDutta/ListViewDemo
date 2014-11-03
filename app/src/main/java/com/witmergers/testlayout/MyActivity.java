@@ -18,7 +18,11 @@ public class MyActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
 
-        String [] myValues = {"This is 1","This is 2","This is 3","This is 4","This is 4","This is 5"};
+        String [] myValues = {"This is 1","This is 2","This is 3","This is 4","This is 4","This is 5",
+                "This is 6","This is 7","This is 8","This is 9","This is 10","This is 11"
+
+
+        };
 
         ListAdapter listAdapter = new MyAdapter(this,myValues);
 

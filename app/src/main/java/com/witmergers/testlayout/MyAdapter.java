@@ -28,9 +28,7 @@ public class MyAdapter extends ArrayAdapter<String> {
         textview.setText(tv);
 
         ImageView imageView = (ImageView)view.findViewById(R.id.imageView1);
-
-
-  imageView.setImageResource(R.drawable.ic_launcher);
+         imageView.setImageResource(R.drawable.ic_launcher);
 
         return view ;
     }
